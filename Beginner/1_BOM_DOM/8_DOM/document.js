@@ -27,4 +27,10 @@ dicoding.innerText = "Belajar Programming di Dicoding";
 dicoding.innerHTML = "<i>Belajar Programming di Dicoding</i>";
 
 // Manipulasi style konten dengan style.property
+for (const button of buttons) {
+    console.log(button.children[0]);
+}
+for (const button of buttons) {
+    button.children[0].style.borderRadius = '12px';
+}
 
