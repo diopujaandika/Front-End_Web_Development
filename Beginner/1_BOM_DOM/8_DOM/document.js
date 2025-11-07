@@ -16,3 +16,15 @@ const buttons = document.querySelectorAll('.button');
 const playButton = buttons[3];
 const playButtonElement = playButton.children[0];
 playButtonElement.setAttribute('disabled', true);
+
+const links = document.getElementById('links');
+
+// Menipulasi dengan innerText
+const dicoding = document.getElementById('dicodingLink');
+dicoding.innerText = "Belajar Programming di Dicoding";
+
+// Menipulasi dengan innerHTML
+dicoding.innerHTML = "<i>Belajar Programming di Dicoding</i>";
+
+// Manipulasi style konten dengan style.property
+
