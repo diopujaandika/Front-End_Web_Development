@@ -38,5 +38,5 @@
 
     1. onclick => Event ini akan terjadi ketika kita menekan elemen tertentu dengan cursor.
     2. ondbclick => Event ini akan terjadi ketika kita menekan elemen tertentu dua kali berturut-turut dengan cursor.
-    3. onmouseover => Event ini akant erjadi ketika cursor kita berada di atas sebuah elemen tetentu.
+    3. onmouseover => Event ini akan terjadi ketika cursor kita berada di atas sebuah elemen tetentu.
 */
