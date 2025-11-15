@@ -5,6 +5,9 @@
 
 alert('Hallo, user!');
 let user = 'Dio Puja Andika';
+let age = 17
 let message = `Hallo ${user}`;
 
+alert(user);
+alert(age);
 alert(message);
