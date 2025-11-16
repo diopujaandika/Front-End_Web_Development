@@ -17,3 +17,11 @@ h1.style.fontSize = '50px';
 // document.getElementByClassName(); => HTMLCollection
 const p1 = document.getElementsByClassName('p1')[0];
 p1.innerHTML = 'Ini diubah dari JavaScript';
+
+
+// innerHTML
+const judulUtama = document.getElementById('judul');
+judul.innerHTML = '<b>Dio P. Andika</b>';
+
+const sectionA = document.querySelector('section#a');
+sectionA.innerHTML = '<div><h2>Section A</h2></div>!';
