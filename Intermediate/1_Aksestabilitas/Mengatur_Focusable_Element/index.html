@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Focusble Elements</title>
+    </head>
+    <body>
+        <section>
+            <h2>Text Input</h2>
+            <input id="textinput" type="text" placeholder="Name Depan">
+        </section>
+
+        <section>
+            <h2>Checkbox</h2>
+            <input id="checkbox" type="checkbox">
+            <label for="checkbox">Saya Setuju!</label>
+        </section>
+
+        <section>
+            <h2>Radio Button</h2>
+            <input type="radio" name="radio" id="radio1" value="0">
+            <label for="radio1">Jeruk</label>
+            <input type="radio" name="radio" id="radio2" value="0">
+            <label for="radio2">Mangga</label>
+            <input type="radio" name="radio" id="radio3" value="0">
+            <label for="radio3">Melon</label>
+        </section>
+
+        <section>
+            <h2>Select Option</h2>
+            <select>
+                <option>Jeruk</option>
+                <option>Mangga</option>
+                <option>Apel</option>
+                <option>Semangka</option>
+                <option>Jambu</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Text Area</h2>
+            <textarea style="min-height: 100px;" placeholder="Alamat"></textarea>
+        </section>
+
+        <section>
+            <h2>Element dengan <code>contenteditable="true"</code></h2>
+            <div contenteditable="true" style="border: 1px solid black; width: 150px;">
+                Coba edit text ini!
+            </div>
+        </section>
+
+        <section>
+            <h2>Anchor (Navigation)</h2>
+            <a href="https://dicoding.com" target="_blank">Menuju dicoding.com</a>
+        </section> 
+
+        <section>
+            <h2>Tombol</h2>
+            <button>Coba Click Saya!</button>
+        </section>
+
+        <section>
+            <h2>Lainnya!</h2>
+            <br>
+            <label for="points">Points (between 0 and 10):</label>
+            <br>
+            <input type="range" id="points" name="points" min="0" max="10">
+            <br>
+            <input type="color">
+        </section>
+
+        <div tabindex="0">Hello World!</div>    <!--Become focusable by tab key-->
+        <input tabindex="-1" value="Hello World!">  <!--Become non-focusable by tab key-->
+
+    </body>
+</html>
