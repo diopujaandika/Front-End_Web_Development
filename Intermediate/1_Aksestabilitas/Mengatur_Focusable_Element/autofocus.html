@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AutoFocus Sample</title>
+    </head>
+    <body>
+        <section>
+            <h1 class="section-title"><code>autofocus</code>Atribut Sample</h1>
+
+            <div class="container">
+                <button class="open-button" id="openDialog">Open Loging Form</button>
+
+                <dialog id="loginDialog" class="dialog">
+                    <form class="form" method="dialog">
+                        <h2>Login</h2>
+
+                        <div>
+                            <label for="username">Username</label>
+                            <input id="username" placeholder="Contoh: John Deo" autofocus>
+                        </div>
+
+                        <div>
+                            <label for="password">password</label>
+                            <input type="password" id="password" placeholder="**********">
+                        </div>
+
+                        <div class="button group">
+                            <button type="submit" class="submit-button">Login</button>
+                            <button type="button" class="cancle-button" id="closeDialog"></button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+        </section>
+
+        <script>
+            const dialog = document.getElementById('loginDialog');
+            const openButton = document.getElementById('openDialog');
+            const closeButton = document.getElementById('closeDialog');
+
+            openButton.addEventListener('click', () => {
+                dialog.showModal();
+            });
+
+            closeButton.addEventListener('click', () => {
+                dialog.close();
+            });
+        </script>
+    </body>
+</html>
