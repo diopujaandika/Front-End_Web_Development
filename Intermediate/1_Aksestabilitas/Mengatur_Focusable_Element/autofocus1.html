@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Focus() Method Demo</title>
+        <link rel="stylesheet" href="autofocus1.css">
+        <script defer src="autofocus1.js"></script>
+    </head>
+    <body>
+        <section>
+            <h1 class="section-title">Focus() Method Demo</h1>
+
+            <div class="container">
+                <form id="demoForm" class="form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input 
+                        type="text"
+                        id="name"
+                        class="form-input"
+                        placeholder="Enter your Name"
+                        >
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <button class="focus-button" id="focusButton">
+                    Click to Focus Name Input
+                </button>
+            </div>
+        </section>
+    </body>
+</html>
