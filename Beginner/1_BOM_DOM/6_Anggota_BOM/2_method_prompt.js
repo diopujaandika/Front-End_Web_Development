@@ -10,3 +10,5 @@ console.log(`Tipe data dari \`pesanInput\` adalah ${typeof pesanInput}`);
 
 // Memeberikan nilai default untuk prompt()
 let name = prompt('Silahkan masukkan nama Anda!', 'Jhon Doe');
+
+alert(`Hai ${name}`);
