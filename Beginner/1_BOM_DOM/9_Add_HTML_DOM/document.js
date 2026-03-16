@@ -9,10 +9,10 @@
 */
 
 // Menambahkan elemen dengan appendChild()
-const newElement = document.createElement('li');
-newElement.innerText = 'Selamat menikmati!';
-const daftar = document.getElementById('daftar');
-daftar.appendChild(newElement);
+const newElement = document.createElement('li'); //Membuat elementnya
+newElement.innerText = 'Selamat menikmati!'; //Membuat isi teks
+const daftar = document.getElementById('daftar'); // Mendapatkan parent elemen
+daftar.appendChild(newElement); //Memanggil elemen yang dibuat dengan appendChild
 
 // Menambahkan elemen dengan insertBefore()
 const elementAwal = document.createElement('li');
