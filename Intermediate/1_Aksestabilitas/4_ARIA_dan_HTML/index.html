@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA dan HTML</title>
+</head>
+<body>
+    <div
+    id="percent-loaded"
+    role="progressbar"
+    aria-valuenow="75"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    >
+    ARIA
+    </div>
+    <progress id="percent-loaded" value="75" max="100">75%</progress>
+
+    <p>4 Fitur utama ARIA</p> <!--ARIA hanya menyediakan informasi tambahan bagi alat bantu aksesiblitas.-->
+    <h2>1. ROLE (Type)</h2>
+    <div role="button">Bayar Sekarang</div> <!--Cara di atas bukan berarti mengubah jati diri elemen <div> menjadi <button>, tapi dia hanya “memerankan” fungsi button, walau sebetulnya bukan button yang sebenarnya.-->
+    <h2>2. ROLE (Type)</h2>
+    <h2>3. ROLE (Type)</h2>
+    <h2>4. ROLE (Type)</h2>
+</body>
+</html>
