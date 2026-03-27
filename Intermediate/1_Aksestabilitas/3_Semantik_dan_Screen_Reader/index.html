@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantik dan Screen Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Semantik dan Screen Reader</h1>
+    <p>
+        Elemen Semantik sangat penting:
+        1. Seo yang lebih baik
+        2. Kode yang lebih bersih dan terstruktur
+        3. Dukungan browser yang lebih luas
+        4. Kompatibilitas dengan plugin dan alat bantu lainnya
+    </p>
+
+    <p>
+    <label for="temp">Letakkan cursor Anda ke kolom input, lalu tekan tombol Tab:</label>
+    <input id="temp">
+  </p>
+
+  <div class="buttons">
+    <button>[button] Tekan saya!</button>
+    <div class="button" tabindex="0">[div] Tekan saya!</div>
+  </div>
+
+  <div id="output" class="output">
+    Coba tekan kedua elemen tombol di atas menggunakan cursor dan menggunakan keyboard (gunakan tombol Tab
+    dan Space/Enter untuk melakukan aksi klik).
+  </div>
+</body>
+</html>
