@@ -1,0 +1,21 @@
+:root {
+  font-family: segoe UI, system-ui, -apple-system, sans-serif;
+}
+
+div {
+  display: inline-flex;
+  flex-flow: row-reverse; 
+  gap: 0.5em; 
+}
+
+span {
+  border: 1px dashed;
+}
+span:nth-of-type(6) {
+  order: 3;
+}
+span:focus-visible {
+  background-color: palegoldenrod;
+  border-color: green;
+  outline: 2px solid red;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Focus Order</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Focus Order adalah urutan perpindahan fokus saat pengguna menekan tombol Tab pada keyboard. Artinya elemen mana yang akan "terpilih" duluan, kedua, ketiga, dst. saat user menavigasi tanpa mouse.
+        Kegunaan:
+        1. Membantu pengguna keyboard (termasuk difabel)
+        2. Membantu navigasi lebih logis dan nyaman
+        3. Perint untuk standar aksesibiltis (WCAG)
+        -->
+
+        <!--Mengatur focus order dengan tabindex-->
+        <!--Default (tanpa tabindex) => Browser otomatis mengikuti elemen di HTML-->
+        <!--
+            Cara dengan menggunakan tabindex => Mengurutkan fokus dengan nilai tabindex:
+            1. 0 => Ikut urutan normal
+            2. -1 => Tidak bisa di-tab (tapi bisa difocus dengan JS)
+            3. 1, 2, 3, ... n => Menentukan urutan manual
+        -->
+        <p>
+            <label for="temp">Letakkan cursor Anda ke kolom input, lalu tekan tombol Tab beberapa kali:</label>
+            <input id="temp">
+        </p>
+
+        <div>
+            <span tabindex="0">flexbox.</span>
+            <span tabindex="0">CSS</span>
+            <span tabindex="0">with</span>
+            <span tabindex="0">styled</span>
+            <span tabindex="0">then</span>
+            <span tabindex="0">This</span>
+            <span tabindex="0">order</span>
+            <span tabindex="0">reverse</span>
+            <span tabindex="0">in</span>
+            <span tabindex="0">written</span>
+            <span tabindex="0">was</span>
+            <span tabindex="1">sentenced</span>
+        </div>
+    </body>
+</html>
