@@ -1,0 +1,25 @@
+:root {
+  font-family: segoe UI, system-ui, -apple-system, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skip-to-content {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  color: red;
+}
+
+.skip-to-content:focus {
+  position: unset !important;
+}
